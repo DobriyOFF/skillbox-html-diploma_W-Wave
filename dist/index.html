@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Радио W-Wawe</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/header.css">
 <!--	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">-->
 <!--	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">-->
 <!--	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">-->
@@ -20,31 +22,34 @@
 <main>
 	<header>
 		<div class="header__primary-wrapper">
-			<div class="container">
+			<div class="container header__primary-container">
 				<img src="./img/header/header-logo.png" alt="logotype" class="logo header__primary-logo">
 				<nav class="header__primary-nav">
 					<ul class="header__primary-list">
 						<li class="header__primary-item">
 							<a href="" class="header__primary-link">Подкасты</a>
 						</li>
-						<li>
+						<li class="header__primary-item">
 							<a href="" class="header__primary-link">Передачи</a>
 						</li>
-						<li>
+						<li class="header__primary-item">
 							<a href="" class="header__primary-link">Гости</a>
 						</li>
-						<li>
+						<li class="header__primary-item">
 							<a href="" class="header__primary-link">Плейлисты</a>
 						</li>
-						<li>
+						<li class="header__primary-item">
 							<a href="" class="header__primary-link">О нас</a>
 						</li>
 					</ul>
 					<div class="header__primary-btns">
 						<a href="" class="header__primary-search">
-							<!-- -->
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
 						</a>
-						<button class="header__primary-log-in">
+						<button class="btn header__primary-log-in">
 							Вход
 						</button>
 					</div>
@@ -52,7 +57,7 @@
 			</div>
 		</div>
 		<div class="header__secondary-wrapper">
-			<div class="container">
+			<div class="container ">
 				<nav class="header__secondary-nav">
 					<ul class="header__secondary-menu">
 						<li class="header__secondary-item">
@@ -76,22 +81,26 @@
 					</ul>
 					<ul class="header__ether">
 						<li class="header__ether-item">
-							<img src="" alt="" class="header__ether-img">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__ether-img">
+								<path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+							</svg>
 							<div class="header__ether-wrapper">
 								<p class="header__ether-desc">Ранее в эфире</p>
 								<h4 class="header__ether-title">«Музыка»</h4>
 							</div>
 						</li>
 						<li class="header__ether-item">
-							<img src="" alt="" class="header__ether-img">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__ether-img">
+								<path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+							</svg>
 							<div class="header__ether-wrapper">
 								<p class="header__ether-desc">Сейчас в эфире</p>
 								<h4 class="header__ether-title">«Как так?»</h4>
 							</div>
 						</li>
 					</ul>
-					<div class="header__secondary-qual">
-						<h5 class="header__secondary-qual">12+</h5>
+					<div class="header__qual">
+						<h5 class="header__qual-year">12+</h5>
 					</div>
 				</nav>
 			</div>
