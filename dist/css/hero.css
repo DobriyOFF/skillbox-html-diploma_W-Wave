@@ -1,0 +1,41 @@
+.hero {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.hero__container {
+    display: flex;
+}
+.hero__info {
+    margin-top: 55px;
+    width: 600px;
+}
+
+.hero__info-title {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.hero__title-span {
+    font-weight: 400;
+}
+
+.hero__info-desc {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.hero__info-btn {
+    margin-top: 45px;
+    padding: 22px 54px;
+    font-weight: 500;
+    font-size: 20px;
+    background: #6D31EE;
+    color: var(--white);
+    border-color: transparent;
+}
+
+.hero__img {
+    margin-left: 161px;
+}

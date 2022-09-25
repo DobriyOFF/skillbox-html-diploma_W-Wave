@@ -1,11 +1,11 @@
 .header__primary-container {
     display: flex;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header__primary-logo {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 10px;
     width: 160px;
     height: 20px;
 }
@@ -13,12 +13,12 @@
 .header__primary-nav {
     display: flex;
     margin-left: 80px;
-    align-items: center;
 }
 
 .header__primary-list {
     display: flex;
-    margin-right: 83px;
+    padding-top: 10px;
+    margin-right: 79px;
 }
 
 .header__primary-item:not(:last-child) {
@@ -27,21 +27,22 @@
 
 .header__primary-link {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 20px;
 }
 
 .header__primary-btns {
     display: flex;
-    align-items: center;
 }
 
 .header__primary-search {
-    padding-right: 27px;
+    padding-top: 10px;
+    padding-right: 25px;
     height: 24px;
 }
 
 .header__primary-log-in {
+    width: 104px;
+    height: 40px;
     font-weight: 500;
     font-size: 16px;
     order: 1;
@@ -77,6 +78,8 @@
 
 .header__ether-item {
     display: flex;
+    padding-left: 15px;
+    width: 175px;
     border-left: 1px solid #E6E8EC;
     align-items: center;
 }
@@ -87,17 +90,13 @@
 
 .header__ether-wrapper {
     display: flex;
+    padding-left: 10px;
     flex-direction: column;
-    width: 121px;
-}
-
-.header__ether-img {
-    margin-right: 10px;
 }
 
 .header__ether-desc {
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 11px;
     color: var(--gray);
 }
 
@@ -107,14 +106,15 @@
 }
 
 .header__qual {
-    width: 46px;
-    height: 60px;
+    margin-left: 52px;
     background: #E6E8EC;
 }
 
 .header__qual-year {
-    width: 25px;
-    height: 16px;
+    margin: 15px 8px;
+    padding: 8px 4px;
+    width: 30px;
+    height: 30px;
     background: #FFFFFF;
     border-radius: 100px;
     font-weight: 400;

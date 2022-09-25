@@ -1,0 +1,34 @@
+.podcasts {
+    background: #E6E8EC;
+}
+
+.podcasts-title {
+    padding-top: 91px;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.podcasts__list,.podcasts__item {
+    display: flex;
+}
+
+.podcasts__item {
+    width: 540px;
+}
+
+.podcasts__item-img {
+    width: 112px;
+}
+
+.podcasts__item-card {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    background: var(--white);
+}
+
+
+.card__info-right {
+    margin-left: 173px;
+}
