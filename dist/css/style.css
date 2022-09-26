@@ -162,9 +162,10 @@ input[type=number] {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   border: 2px solid #121723;
   border-radius: 77px;
 
-  background: none;
+  background-color: transparent;
 }
