@@ -84,6 +84,11 @@
     align-items: center;
 }
 
+.header__ether-img {
+    padding: 0;
+    border: 0;
+}
+
 .header__ether-item:last-child {
     border-right: 1px solid #E6E8EC;
 }

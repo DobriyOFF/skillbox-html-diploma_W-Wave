@@ -1,0 +1,188 @@
+
+
+.guests {
+    padding-top: 90px;
+    padding-bottom: 94px;
+    background: #121723;
+    color: var(--white);
+}
+
+.guests__title {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.guests__span {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.guests__desc {
+    margin-top: 10px;
+    width: 825px;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--gray);
+}
+
+/** Список раскрывающийся **/
+.guests__wrapper, .guests__list, .guests__item-bottom {
+    display: flex;
+}
+
+.guests__wrapper {
+    margin-top: 50px;
+}
+
+.guests__list {
+    flex-direction: column;
+}
+
+.guests__item {
+    width: 730px;
+}
+
+.guests__item-wrapper, .guests__item-circle {
+    position: relative;
+}
+
+.guests__item-circle::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 3px;
+
+    pointer-events: none;
+
+    width: 38px;
+    height: 38px;
+    border: 2px solid #A1A6B4;
+    border-radius: 50%;
+}
+
+/** Это на актив **/
+/*.guests__item-wrapper::before,*/
+/*.guests__item-wrapper::after {*/
+/*    display: block;*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 42px;*/
+/*    right: 17px;*/
+/*    transform: rotate(135deg);*/
+
+/*    pointer-events: none;*/
+
+/*    width: 11px;*/
+/*    height: 11px;*/
+/*    border-left: 2px solid #A1A6B4;*/
+/*    border-bottom: 2px solid #A1A6B4;*/
+/*}*/
+
+.guests__item-wrapper::before,
+.guests__item-wrapper::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 37px;
+    right: 17px;
+    transform: rotate(-45deg);
+
+    pointer-events: none;
+
+    width: 11px;
+    height: 11px;
+    border-left: 2px solid #A1A6B4;
+    border-bottom: 2px solid #A1A6B4;
+}
+
+.guests__item-top {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    align-items: first;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-top: 34px;
+    padding-bottom: 32px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.guests__item-bottom {
+    margin-top: 13px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.guests__bottom-item:not(:nth-child(4n+4)) {
+    margin-right: 30px;
+}
+
+.guests__bottom-item {
+    padding-top: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    width: 160px;
+}
+
+.deactive {
+    display: none;
+}
+
+.active {
+    border-top: 1px solid #AA9DFA;
+    border-bottom: 1px solid #AA9DFA;
+}
+
+.active-author {
+    color: #AA9DFA;
+}
+
+/** Карточка Автора **/
+
+.guests__card {
+    margin-left: 30px;
+}
+
+.guests__card-wrapper {
+    display: flex;
+    margin-top: 11px;
+}
+
+.guests__card-social {
+    margin-right: 34px;
+}
+
+.guests__card-title {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.guests__card-desc {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 180%;
+    color: var(--gray);
+}
+
+.guests__card-btn {
+    margin-top: 30px;
+    padding: 9px 20px 9px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #AA9DFA;
+    border-radius: 77px;
+    color: #AA9DFA;
+}
