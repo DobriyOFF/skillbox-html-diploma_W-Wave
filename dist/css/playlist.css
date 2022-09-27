@@ -1,0 +1,215 @@
+.playlist__container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.playlist__wrapper, .radio__form {
+    display: flex;
+}
+
+.playlist__genre {
+    width: 400px;
+}
+
+.playlist__title {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.radio__form {
+    flex-direction: column;
+    border-bottom: 1px solid #D2D5DD;;
+}
+
+.playlist__radio-wrapper {
+    margin-bottom: 12px;
+}
+
+.playlist__form-desc {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.playlist__form-label {
+    font-size: 20px;
+}
+
+/* для элемента input c type="radio" */
+.playlist__form-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+/* для элемента .playlist__form-label связанного с .playlist__form-input */
+.playlist__form-input+.playlist__form-label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+/* создание в .playlist__form-label псевдоэлемента  before со следующими стилями */
+.playlist__form-input+.playlist__form-label::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #A1A6B4;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+/* стили при наведении курсора на радио */
+.playlist__form-input:not(:disabled):not(:checked)+.playlist__form-label:hover::before {
+    border-color: #6D31EE;
+}
+/* стили для активной радиокнопки (при нажатии на неё) */
+.playlist__form-input:not(:disabled):active+.playlist__form-label::before {
+    background-color: #6D31EE;
+    border-color: #6D31EE;
+}
+/* стили для радиокнопки, находящейся в фокусе подсветка вокруг радиокнопки*/
+/*.playlist__form-input:focus+.playlist__form-label::before {*/
+/*    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);*/
+/*}*/
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.playlist__form-input:focus:not(:checked)+.playlist__form-label::before {
+    border-color: #80bdff;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.playlist__form-input:checked+.playlist__form-label::before {
+    border-color: #6D31EE;
+    background-color: #6D31EE;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='4' fill='%23fff'/%3e%3c/svg%3e");
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.playlist__form-input:disabled+.playlist__form-label::before {
+    background-color: #e9ecef;
+}
+
+.playlist__desc {
+    margin-top: 40px;
+}
+
+.playlist__desc, .playlist__span{
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--gray);
+}
+
+.playlist__span {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.playlist__18 {
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    font-size: 12px;
+    color: #A1A6B4;
+}
+
+.playlist__18-circle {
+    position: relative;
+    margin-top: 5px;
+}
+
+.playlist__18-circle::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    pointer-events: none;
+
+    width: 27px;
+    height: 27px;
+    border: 1px solid #A1A6B4;
+    border-radius: 50%;
+}
+
+/** Карточки **/
+.playlist__songs {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 59px;
+    flex-wrap: wrap;
+}
+
+/*.playlist__item {*/
+/*    width: 160px;*/
+/*}*/
+
+.playlist__item:not(:nth-child(4n+4)) {
+    padding-right: 30px;
+}
+
+.playlist__item-ico {
+    position: absolute;
+    top: 4px;
+    left: 4px
+}
+
+.playlist__shadow {
+    position: absolute;
+    top: 0px;
+    left: 135px;
+    width: 24px;
+    height: 20px;
+    background: black;
+}
+
+.playlist__item-photo1 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo1.jpg");
+}
+.playlist__item-photo2 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo2.jpg");
+}
+.playlist__item-photo3 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo3.jpg");
+}
+.playlist__item-photo4 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo4.jpg");
+}
+.playlist__item-photo5 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-image: url("../img/playlist/photo5.jpg");
+}
+
+.playlist__item-wrapper {
+    padding: 16px;
+    width: 160px;
+    border: 1px solid #E6E8EC;
+}
+
+.playlist__item-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.playlist__item-desc {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #A1A6B4;
+}
