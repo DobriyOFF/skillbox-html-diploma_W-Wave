@@ -100,14 +100,12 @@
 
 .guests__item-top {
     display: flex;
-    padding: 0;
+    padding: 34px 0px 30px 0px;
     width: 100%;
     align-items: first;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    padding-top: 34px;
-    padding-bottom: 32px;
     border-left: 0;
     border-right: 0;
     border-top: 1px solid var(--gray);
