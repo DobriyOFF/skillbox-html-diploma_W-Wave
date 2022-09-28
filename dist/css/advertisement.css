@@ -10,9 +10,12 @@
 
 .adv__partybox {
     margin-top: 10px;
-    width: 640px;
-    height: 562px;
-    background: url("../img/advertisement/box.png");
+    position: relative;
+    width: 58%;
+}
+
+.adv__partybox-img {
+    position: absolute;
 }
 
 .adv__box-new {
@@ -27,7 +30,7 @@
 
 .adv__card {
     margin-left: 30px;
-    width: 450px;
+    width: 41%;
 }
 
 .adv__card-title {
@@ -67,4 +70,10 @@
 
 .adv__btn-ico {
     margin-right: 8px;
+}
+
+.adv__card-wawe-svg {
+    display: inline-block;
+    top: 0;
+    left: 0;
 }

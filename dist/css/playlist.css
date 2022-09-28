@@ -1,6 +1,6 @@
 .playlist__container {
     margin-top: 92px;
-    margin-bottom: 64px;
+    margin-bottom: 59px;
 }
 
 .playlist__wrapper, .radio__form {
@@ -141,6 +141,7 @@
     margin-top: 16px;
     margin-left: 59px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /*.playlist__item {*/
@@ -148,7 +149,6 @@
 /*}*/
 
 .playlist__item:not(:nth-child(4n+4)) {
-    padding-right: 30px;
     padding-bottom: 25px;
 }
 

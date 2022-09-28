@@ -5,6 +5,7 @@
 
 .hero__container {
     display: flex;
+    justify-content: space-between;
 }
 .hero__info {
     margin-top: 55px;
@@ -37,5 +38,5 @@
 }
 
 .hero__img {
-    margin-left: 161px;
+    width: 350px;
 }

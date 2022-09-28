@@ -12,8 +12,15 @@
     display: flex;
 }
 
+.footer__header {
+    justify-content: space-between;
+}
+
+.footer__menu {
+    width: 445px;
+}
+
 .footer__logotypes {
-    margin-right: 505px;
     flex-direction: column;
 }
 

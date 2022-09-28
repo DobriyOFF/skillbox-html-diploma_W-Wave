@@ -34,14 +34,15 @@
 
 .guests__wrapper {
     margin-top: 50px;
+    justify-content: space-between;
 }
 
 .guests__list {
     flex-direction: column;
+    width: 66%;
 }
 
 .guests__item {
-    width: 730px;
 }
 
 .guests__item-wrapper, .guests__item-circle {
@@ -151,6 +152,7 @@
 
 .guests__card {
     margin-left: 30px;
+    width: 350px;
 }
 
 .guests__card-wrapper {

@@ -10,10 +10,11 @@
 
 .about__header {
     display: flex;
+    justify-content: space-between;
 }
 
 .about__header-info {
-    width: 654px;
+    width: 59%;
 }
 
 .about__header-title {
@@ -36,6 +37,7 @@
 }
 
 .about__header-img {
+    display: flex;
     position: relative;
     margin-left: 11px;
 }
@@ -45,8 +47,7 @@
 }
 
 .about__header-dawn {
-    position: absolute;
-    top: 18px;
+    padding-top: 24px;
 }
 
 .about__carousel {

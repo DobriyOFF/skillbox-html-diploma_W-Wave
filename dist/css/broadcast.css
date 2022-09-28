@@ -100,18 +100,15 @@
 .broadcast__list {
     flex-wrap: wrap;
     margin-top: 15px;
+    justify-content: space-between;
 }
 
 .broadcast__item {
     margin-bottom: 30px;
     flex-wrap: wrap;
-    width: 255px;
+    width: 31%;
     height: 260px;
     border: 1px solid #E6E8EC;
-}
-
-.broadcast__item:not(:nth-child(3n+3)) {
-    margin-right: 30px;
 }
 
 .broadcast__cards-container {
