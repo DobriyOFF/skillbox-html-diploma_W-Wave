@@ -148,3 +148,16 @@
     transform: translate(-3px,1px);
 }
 
+@media(max-width:1600px) {
+    .broadcast__cards-img {
+        width: 100%;
+    }
+}
+
+@media(max-width:1170px) {
+    .broadcast__item {
+        width: 225px;
+    }
+}
+
+

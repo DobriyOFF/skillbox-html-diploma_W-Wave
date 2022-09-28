@@ -256,3 +256,38 @@
     font-size: 12px;
     color: #A1A6B4;
 }
+
+@media(max-width:1686px) {
+    .playlist__genre {
+        width: 28%;
+    }
+
+    .radio__form {
+        width: 100%;
+    }
+
+    .playlist__songs {
+        width: 86%;
+    }
+}
+
+@media(max-width:1600px) {
+    .playlist__genre {
+        width: 26%;
+    }
+
+    .radio__form {
+        width: 100%;
+    }
+
+    .playlist__songs {
+        width: 65%;
+    }
+}
+
+@media(max-width:1234px) {
+    .playlist__genre {
+        width: 27%;
+    }
+
+}

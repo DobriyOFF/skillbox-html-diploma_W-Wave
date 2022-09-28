@@ -19,7 +19,7 @@
 
 .header__primary-list {
     display: flex;
-    width: 638px;
+    width: 74%;
     padding-top: 10px;
     justify-content: space-between;
 }
@@ -64,7 +64,7 @@
 
 .header__secondary-menu {
     display: flex;
-    width: 611px;
+    width: 52%;
     justify-content: space-between;
 }
 
