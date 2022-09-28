@@ -1,0 +1,70 @@
+.advertisement {
+    background: #292E39;
+}
+
+.adv__container {
+    display: flex;
+    padding-top: 93px;
+    padding-bottom: 130px;
+}
+
+.adv__partybox {
+    margin-top: 10px;
+    width: 640px;
+    height: 562px;
+    background: url("../img/advertisement/box.png");
+}
+
+.adv__box-new {
+    position: absolute;
+}
+
+.adv__box-new>svg {
+    position: absolute;
+    top: -8px;
+    transform: translateX(-6px);
+}
+
+.adv__card {
+    margin-left: 30px;
+    width: 450px;
+}
+
+.adv__card-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: #F0D288;
+}
+
+.adv__card-wawe {
+    margin-top: 19px;
+}
+
+.adv__card-desc {
+    margin-top: 13px;
+    font-size: 16px;
+    line-height: 180%;
+    color: white;
+}
+
+.adv__card-price {
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 30px;
+    color: white
+}
+
+.adv__card-btn {
+    margin-top: 20px;
+    padding: 24px 12px;
+    border: 2px solid #F0D288;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #F0D288;
+}
+
+.adv__btn-ico {
+    margin-right: 8px;
+}

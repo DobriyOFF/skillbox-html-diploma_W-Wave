@@ -146,8 +146,15 @@ input[type=number] {
 
 @media(max-width:1600px) {
   .container {
-    padding-left : 100px;
-    padding-right: 100px
+    padding-left : 190px;
+    padding-right: 190px
+  }
+}
+
+@media(max-width:1450px) {
+  .container {
+    padding-left : 140px;
+    padding-right: 140px
   }
 }
 

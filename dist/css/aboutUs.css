@@ -1,0 +1,288 @@
+.about-us {
+    color: var(--white);
+    background: var(--black);
+}
+
+.about__container {
+    padding-top: 94px;
+    padding-bottom: 84px;
+}
+
+.about__header {
+    display: flex;
+}
+
+.about__header-info {
+    width: 654px;
+}
+
+.about__header-title {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.about__header-pretitle {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.about__header-desc {
+    margin-top: 8px;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--gray);
+}
+
+.about__header-img {
+    position: relative;
+    margin-left: 11px;
+}
+
+.about__header-spiral {
+    margin-right: 28px;
+}
+
+.about__header-dawn {
+    position: absolute;
+    top: 18px;
+}
+
+.about__carousel {
+    display: flex;
+    margin-top: 23px;
+}
+
+.about__carousel-wrapper {
+    display: flex;
+}
+
+.about__carousel-slide {
+    margin-right: 30px;
+    width: 255px;
+}
+
+.carousel__slide-title {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.carousel__slide-desc {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A1A6B4;
+}
+
+/** Кнопки **/
+.carousel__btn-wrapper-prev, .carousel__btn-circle-prev, .carousel__btn-wrapper-next, .carousel__btn-circle-next {
+    position: relative;
+}
+
+.carousel__btn-circle-prev::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 107px;
+    right: 32px;
+
+    pointer-events: none;
+
+    width: 38px;
+    height: 38px;
+    border: 2px solid #A1A6B4;
+    border-radius: 50%;
+}
+
+/** Это на актив **/
+/*.carousel__btn-wrapper::before,*/
+/*.carousel__btn-wrapper::after {*/
+/*    display: block;*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 42px;*/
+/*    right: 17px;*/
+/*    transform: rotate(135deg);*/
+
+/*    pointer-events: none;*/
+
+/*    width: 11px;*/
+/*    height: 11px;*/
+/*    border-left: 2px solid #A1A6B4;*/
+/*    border-bottom: 2px solid #A1A6B4;*/
+/*}*/
+
+.carousel__btn-wrapper-prev::before,
+.carousel__btn-wrapper-prev::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 122px;
+    right: 46px;
+    transform: rotate(45deg);
+
+    pointer-events: none;
+
+    width: 11px;
+    height: 11px;
+    border-left: 2px solid #A1A6B4;
+    border-bottom: 2px solid #A1A6B4;
+}
+
+.carousel__btn-circle-next::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 107px;
+    right: -45px;
+
+    pointer-events: none;
+
+    width: 38px;
+    height: 38px;
+    border: 2px solid #A1A6B4;
+    border-radius: 50%;
+}
+
+.carousel__btn-wrapper-next::before,
+.carousel__btn-wrapper-next::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 122px;
+    right: -28px;
+    transform: rotate(225deg);
+
+    pointer-events: none;
+
+    width: 11px;
+    height: 11px;
+    border-left: 2px solid #A1A6B4;
+    border-bottom: 2px solid #A1A6B4;
+}
+
+/** Форма **/
+.about__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.about__form-textarea {
+    padding-top: 30px;
+    padding-left: 32px;
+    width: 920px;
+    height: 150px;
+
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #A1A6B4;
+}
+
+.about__form-input {
+    margin-top: 30px;
+    margin-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 32px;
+    width: 445px;
+
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: #A1A6B4;
+}
+
+.about__form-btn {
+    margin-top: 25px;
+    padding: 25px 54px;
+    background: #6D31EE;
+    border-radius: 40px;
+
+    font-weight: 500;
+    font-size: 20px;
+
+    color: var(--white);
+}
+
+.about__form-wrapper {
+    display: flex;
+}
+
+.about__form-container {
+    margin-top: 26px;
+}
+
+.about__form-label {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/** Checkbox **/
+.about__form-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.about__form-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.about__form-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid var(--white);
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.about__form-checkbox:checked+label::before {
+    border-color: var(--white);
+    background-color: transparent;
+    background-image: url("../img/aboutUs/galka.svg");
+}
+
+/*!* стили при наведении курсора на checkbox *!*/
+/*.about__form-checkbox:not(:disabled):not(:checked)+label:hover::before {*/
+/*    border-color: #b3d7ff;*/
+/*}*/
+/*!* стили для активного состояния чекбокса (при нажатии на него) *!*/
+/*.about__form-checkbox:not(:disabled):active+label::before {*/
+/*    background-color: #AA9DFA;*/
+/*    border-color: #b3d7ff;*/
+/*}*/
+/*!* стили для чекбокса, находящегося в фокусе *!*/
+/*.about__form-checkbox:focus+label::before {*/
+/*    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);*/
+/*}*/
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+/*.about__form-checkbox:focus:not(:checked)+label::before {*/
+/*    border-color: #80bdff;*/
+/*}*/
+/* стили для чекбокса, находящегося в состоянии disabled */
+/*.about__form-checkbox:disabled+label::before {*/
+/*    background-color: #e9ecef;*/
+/*}*/
+
+
