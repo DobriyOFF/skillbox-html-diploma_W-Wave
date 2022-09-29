@@ -1,10 +1,33 @@
-
-
 .guests {
     padding-top: 90px;
     padding-bottom: 94px;
     background: #121723;
     color: var(--white);
+}
+
+.guests__item:hover .guests__item-top {
+    color: #AA9DFA;
+}
+
+.guests__item:hover .guests__item-circle::after {
+    border-color: #AA9DFA;
+}
+
+.guests__item:hover .guests__item-wrapper::after {
+    border-color: #AA9DFA;
+}
+
+.guests__item:focus .guests__item-top {
+    color: var(--white);
+    background-color: #292E39;
+}
+
+.guests__item:focus .guests__item-circle::after {
+    border-color: #A1A6B4
+}
+
+.guests__item:focus .guests__item-wrapper::after {
+    border-color: #A1A6B4
 }
 
 .guests__title {
@@ -40,9 +63,6 @@
 .guests__list {
     flex-direction: column;
     width: 66%;
-}
-
-.guests__item {
 }
 
 .guests__item-wrapper, .guests__item-circle {
@@ -131,6 +151,10 @@
     width: 25%
 }
 
+.gusts__bottom-link {
+    color: var(--white);
+}
+
 .deactive {
     display: none;
 }
@@ -156,8 +180,20 @@
     margin-top: 11px;
 }
 
-.guests__card-social {
+.guests__card-link {
     margin-right: 34px;
+}
+
+.guests__card-social:hover > path {
+    fill: #6D31EE;
+}
+
+.guests__card-social:focus > path {
+    fill: #AA9DFA;
+}
+
+.guests__card-social:active > path {
+    fill: #4F28A5;
 }
 
 .guests__card-title {
@@ -181,4 +217,20 @@
     border: 2px solid #AA9DFA;
     border-radius: 77px;
     color: #AA9DFA;
+}
+
+.guests__card-btn:hover {
+    background: #AA9DFA;
+    color: var(--white);
+}
+
+.guests__card-btn:focus {
+    border-color: transparent;
+    background: #6D31EE;
+    color: var(--white);
+}
+
+.guests__card-btn:active {
+    background: #4F28A5;
+    color: var(--white);
 }

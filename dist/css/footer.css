@@ -24,12 +24,40 @@
     flex-direction: column;
 }
 
+.footer__logo:hover > path {
+    stroke: #292E39;
+}
+
 .footer__social-list {
     margin-top: 20px;
 }
 
 .footer__social-item {
     margin-right: 23px;
+}
+
+.footer__social-svg:hover > path {
+    fill: #6D31EE;
+}
+
+.footer__social-svg:focus > path {
+    fill: #AA9DFA;
+}
+
+.footer__social-svg:active > path {
+    fill: #4F28A5;
+}
+
+.footer__social-svg:hover > g > path {
+    fill: #6D31EE;
+}
+
+.footer__social-svg:focus > g > path {
+    fill: #AA9DFA;
+}
+
+.footer__social-svg:active > g > path {
+    fill: #4F28A5;
 }
 
 .footer__menu-list {
@@ -49,6 +77,10 @@
 .footer__menu-link {
     font-size: 16px;
     color: var(--white)
+}
+
+.footer__menu-link:hover {
+    color: #6D31EE;
 }
 
 .footer__footer {

@@ -11,6 +11,10 @@
     height: 20px;
 }
 
+.header__primary-logo:hover > path {
+    fill: #292E39;
+}
+
 .header__primary-nav {
     display: flex;
     width: 78%;

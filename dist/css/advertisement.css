@@ -68,6 +68,43 @@
     color: #F0D288;
 }
 
+.adv__card-btn:hover {
+    color: #121723;
+    background: #F0D288;
+}
+
+.adv__card-btn:hover .adv__btn-ico-path2 {
+    fill: #F0D288;
+}
+
+.adv__card-btn:hover .adv__btn-ico-path1 {
+    fill: #121723;
+}
+
+.adv__card-btn:focus {
+    background: #BB973E;
+}
+
+.adv__card-btn:focus .adv__btn-ico-path2 {
+    fill: #121723;
+}
+
+.adv__card-btn:focus .adv__btn-ico-path1 {
+    fill: #F0D288;
+}
+
+.adv__card-btn:active {
+    border: 2px solid transparent;
+}
+
+.adv__card-btn:active .adv__btn-ico-path2 {
+    fill: #BB973E;
+}
+
+.adv__card-btn:active .adv__btn-ico-path1 {
+    fill: #121723;
+}
+
 .adv__btn-ico {
     margin-right: 8px;
 }

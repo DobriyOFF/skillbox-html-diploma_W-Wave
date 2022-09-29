@@ -165,18 +165,45 @@
 
 .podcasts__features-btn {
     padding: 0;
-    margin-right: 2px;
+    margin-right: 30px;
     cursor: pointer;
     background-color: transparent;
     border: none;
 }
 
-.features__item-link, .podcasts__features-svg:hover > path {
+.podcasts__features-btn:hover span {
+    color: #6D31EE;
+}
+.podcasts__features-btn:hover .podcasts__features-svg > path {
+    stroke: #6D31EE;
+}
+
+.podcasts__features-btn:focus {
+    background-color: #AA9DFA;
+}
+
+.podcasts__features-btn:focus span {
+    color: #FFFFFF;
+}
+.podcasts__features-btn:focus .podcasts__features-svg > path {
+    stroke: var(--white);
+}
+
+.podcasts__features-btn:active {
+    background: transparent;
+}
+
+.podcasts__features-btn:active span {
+    color: #4F28A5;
+
+}
+
+.podcasts__features-btn:active .podcasts__features-svg > path {
+    fill: #6D31EE;
     stroke: #6D31EE;
 }
 
 .features__item-link {
-    margin-right: 30px;
     font-size: 16px;
     color: var(--gray);
 }
@@ -191,3 +218,22 @@
     color: #6D31EE;
     background-color: transparent;
 }
+
+.podcasts__btn:hover {
+    background: #6D31EE;
+    color: var(--white);
+}
+
+.podcasts__btn:focus {
+    background: #AA9DFA;
+    border-color: #6D31EE;
+    color: var(--white);
+}
+
+.podcasts__btn:active {
+    background: #4F28A5;
+    border-color: #4F28A5;
+    color: var(--white);
+}
+
+
