@@ -37,6 +37,20 @@
     border-color: transparent;
 }
 
+.hero__info-btn:hover {
+    background: #AA9DFA;
+}
+
+.hero__info-btn:focus {
+    background: #AA9DFA;
+    border: 2px solid #4F28A5;
+}
+
+.hero__info-btn:active {
+    background: #4F28A5;
+    border: 2px solid #4F28A5;
+}
+
 .hero__img {
     width: 350px;
 }

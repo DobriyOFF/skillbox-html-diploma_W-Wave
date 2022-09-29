@@ -93,7 +93,8 @@
 .item__card-info {
     display: flex;
     justify-content: space-between;
-    padding-right: 33px;
+    padding-right: 30px;
+    align-items: center;
 }
 
 .info__left-time {
@@ -121,13 +122,37 @@
 }
 
 .card__info-right {
-    margin-top: 13px;
-    padding: 11px 11px 8px 15px;
     cursor: pointer;
     height: 42px;
-    border: 2px solid #A1A6B4;
-    border-radius: 100px;
+    border: 0;
     background-color: transparent;
+}
+
+.card__info-play:hover > circle {
+    stroke: #6D31EE;
+}
+
+.card__info-play:hover > path{
+    stroke: #6D31EE;
+    fill: #6D31EE;
+}
+
+.card__info-play:focus > circle {
+    stroke: #AA9DFA;
+}
+
+.card__info-play:focus > path  {
+    fill: #AA9DFA;
+    stroke: #AA9DFA;
+}
+
+.card__info-play:active > circle {
+    fill: #6D31EE;
+}
+
+.card__info-play:active > path {
+    stroke: white;
+    fill: white;
 }
 
 .podcasts__features {
@@ -144,6 +169,10 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
+}
+
+.features__item-link, .podcasts__features-svg:hover > path {
+    stroke: #6D31EE;
 }
 
 .features__item-link {

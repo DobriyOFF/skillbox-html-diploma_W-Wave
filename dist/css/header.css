@@ -32,6 +32,27 @@
     font-size: 20px;
 }
 
+.header__primary-link:hover {
+    padding-bottom: 10px;
+    color: #6D31EE;
+    border-bottom: 1px solid #6D31EE;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__primary-link:focus {
+    padding-bottom: 0;
+    color: var(--white);
+    border: 0;
+    outline: 3px solid #AA9DFA;
+    background: #AA9DFA;
+}
+
+.header__primary-link:active {
+    color: #4F28A5;
+    background: transparent;
+    border-bottom: 1px solid #4F28A5;;
+}
+
 .header__primary-btns {
     display: flex;
 }
@@ -42,6 +63,18 @@
     height: 24px;
 }
 
+.header__primary-search-svg:hover > path {
+    stroke: #AA9DFA;
+}
+
+.header__primary-search-svg:focus > path {
+    stroke: #AA9DFA;
+}
+
+.header__primary-search-svg:active > path {
+    stroke: #4F28A5;
+}
+
 .header__primary-log-in {
     width: 104px;
     height: 40px;
@@ -50,6 +83,23 @@
     order: 1;
     flex-grow: 0;
     color: #121723;
+}
+
+.header__primary-log-in:hover {
+    color: var(--white);
+    background: #121723;
+}
+
+.header__primary-log-in:focus {
+    color: var(--black);
+    background: #AA9DFA;
+    border: 1px solid #121723;
+}
+
+.header__primary-log-in:active {
+    color: var(--white);
+    background: #4F28A5;
+    border: 1px solid #4F28A5;
 }
 
 .header__secondary-wrapper {
@@ -73,6 +123,21 @@
     font-size: 16px;
 }
 
+.header__secondary-link:hover {
+    color: #6D31EE;
+}
+
+.header__secondary-link:focus {
+    color: #FFFFFF;
+    background: #AA9DFA;
+    outline: 3px solid #AA9DFA;
+}
+
+.header__secondary-link:active {
+    background: transparent;
+    color: #4F28A5;
+}
+
 .header__ether {
     display: flex;
     width: 349px;
@@ -90,6 +155,21 @@
 .header__ether-img {
     padding: 0;
     border: 0;
+}
+
+.header__ether-img-svg:hover > path {
+    fill: transparent;
+    stroke: #6D31EE;
+}
+
+.header__ether-img-svg:focus > path {
+    fill: transparent;
+    stroke: #AA9DFA;
+}
+
+.header__ether-img-svg:active > path {
+    fill: #4F28A5;
+    stroke: transparent;
 }
 
 .header__ether-item:last-child {
