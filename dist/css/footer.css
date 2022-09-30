@@ -106,3 +106,16 @@
     color: #A1A6B4;
 }
 
+@media(max-width: 1024px) {
+    .footer__menu-item:not(:nth-child(3n+3)) {
+        margin-right: 120px;
+    }
+
+    .footer__menu-item {
+        padding-bottom: 18px;
+    }
+
+    .footer__social-item {
+        margin-right: 21px;
+    }
+}

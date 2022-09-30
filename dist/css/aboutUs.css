@@ -1,3 +1,7 @@
+.non-active {
+    display: none;
+}
+
 .about-us {
     color: var(--white);
     background: var(--black);
@@ -338,4 +342,64 @@
     }
 }
 
+@media(max-width: 1024px) {
+    .about__container {
+        padding-top: 92px;
+        padding-bottom: 87px;
+    }
+
+    .about__header-pretitle {
+        margin-top: 9px;
+        line-height: 150%;
+    }
+
+    .about__header-spiral {
+        display: none;
+    }
+
+    .about__header-info {
+        width: 65%;
+    }
+
+    .about__header-img {
+        margin-top: 29px;
+    }
+
+    .about__carousel-slide {
+        margin-right: 0;
+    }
+
+    .about__carousel-container {
+        margin-top: 5px;
+    }
+
+    .about__carousel-wrapper {
+        justify-content: space-between;
+        width: 853px;
+    }
+
+    .carousel__slide-img {
+        width: 397px;
+        height: 255px;
+    }
+
+    .about__carousel-card {
+        width: 397px;
+    }
+
+    .about__form-table {
+        display: flex;
+    }
+
+    .about__form-input {
+        width: 397px;
+    }
+
+
+    .about__form {
+        margin-top: 38px;
+
+    }
+
+}
 

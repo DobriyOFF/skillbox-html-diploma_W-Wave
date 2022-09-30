@@ -54,3 +54,37 @@
 .hero__img {
     width: 350px;
 }
+
+@media(max-width:1024px) {
+    .hero {
+        margin-bottom: 84px;
+    }
+
+    .playlist__form-desc {
+        display: none;
+    }
+
+    .playlist__form-desc-table {
+        display: block;
+    }
+
+
+    .hero__info-desc {
+        margin-top: 11px;
+    }
+
+    .hero__info-btn {
+        margin-top: 20px;
+        padding: 22px 52px;
+    }
+
+    .hero__info {
+        width: 62%;
+    }
+
+    .hero__img {
+        margin-top: 45px;
+        width: 258px;
+    }
+}
+

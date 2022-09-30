@@ -114,3 +114,32 @@
     top: 0;
     left: 0;
 }
+
+@media(max-width: 1024px) {
+    .adv__container {
+        padding-bottom: 92px;
+    }
+    .adv__partybox {
+        margin-top: 124px;
+        width: 48%;
+    }
+    .adv__box-new>svg {
+        width: 100px;
+        height: 100px;
+        top: -5px;
+        transform: translateX(0px);
+    }
+    .adv__card {
+        margin-left: 38px;
+        width: 49%;
+    }
+
+    .adv__card-price {
+        margin-top: 28px;
+    }
+
+    .adv__card-btn {
+        margin-top: 25px;
+        padding: 23px 11px;
+    }
+}

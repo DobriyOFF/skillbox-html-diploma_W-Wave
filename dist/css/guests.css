@@ -234,3 +234,34 @@
     background: #4F28A5;
     color: var(--white);
 }
+
+@media(max-width: 1024px) {
+    .guests__desc {
+        width: 550px;
+    }
+
+    .guests__list {
+        width: 90%;
+    }
+
+    .guests__item-bottom {
+        margin-bottom: 30px;
+    }
+
+    .guests__bottom-item {
+        padding-bottom: 0;
+        width: 33%;
+    }
+
+    .guests__card-wrapper {
+        margin-top: 7px;
+    }
+
+    .guests__card {
+        margin-left: 30px;
+    }
+
+    .guests__card-title {
+        margin-top: 9px;
+    }
+}

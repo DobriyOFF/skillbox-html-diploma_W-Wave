@@ -311,6 +311,14 @@
     }
 }
 
+.playlist__footer-table {
+    display: none;
+}
+
+.playlist__form-desc-table {
+    display: none;
+}
+
 @media(max-width:1600px) {
     .playlist__genre {
         width: 26%;
@@ -328,6 +336,76 @@
 @media(max-width:1234px) {
     .playlist__genre {
         width: 27%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .playlist__wrapper {
+        flex-direction: column;
+    }
+
+    .playlist__container {
+        margin-bottom: 125px;
+    }
+
+    .playlist__header-desktop {
+        display: none;
+    }
+
+    .radio__form {
+        border: none;
+    }
+
+    .playlist__form-desc-table {
+        display: block;
+    }
+
+    .playlist__form-desc {
+        margin-top: 6px;
+        margin-bottom: 9px;
+    }
+
+    .radio__form {
+        width: 490px;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    .playlist__radio-wrapper {
+        margin-bottom: 14px;
+    }
+
+    .playlist__songs {
+        margin-top: 13px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .playlist__item {
+        display: flex;
+        margin-bottom: 30px;
+        width: 255px;
+    }
+
+    .playlist__item-photo1, .playlist__item-photo2, .playlist__item-photo3, .playlist__item-photo4, .playlist__item-photo5, .playlist__item-photo6, .playlist__item-photo7, .playlist__item-photo8, .playlist__item-photo9, .playlist__item-photo10, .playlist__item-photo11, .playlist__item-photo12 {
+        width: 112px;
+        height: 112px;
+    }
+
+    .playlist__item-wrapper {
+        width: 143px;
+        height: 112px;
+    }
+
+    .playlist__desc {
+        margin-top: 0;
+    }
+
+    .playlist__footer-table {
+        display: block;
+        margin-top: 12px;
+        padding-top: 38px;
+        border-top: 1px solid #D2D5DD;
     }
 
 }

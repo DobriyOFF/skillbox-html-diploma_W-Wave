@@ -217,4 +217,30 @@
     }
 }
 
+@media(max-width: 10224px) {
+    .broadcast {
+        padding-top: 90px;
+    }
+
+    .broadcast__navigation {
+        margin-right: 29px;
+    }
+
+    .broadcast__list {
+        margin-top: 17px;
+    }
+
+    .broadcast__item {
+        width: 255px;
+    }
+
+    .broadcast__btn {
+        margin-top: 16px;
+    }
+
+    .broadcast__cards-container {
+        padding: 0px 0px 20px 15px;
+    }
+}
+
 
