@@ -1,3 +1,7 @@
+.footer__footer-svg-mobile {
+    display: none;
+}
+
 .footer {
     background: #292E39;
     color: white;
@@ -117,5 +121,83 @@
 
     .footer__social-item {
         margin-right: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-bottom: 14px;
+    }
+
+    .footer__container {
+        padding-bottom: 24px;
+    }
+
+    .footer__header {
+        flex-direction: column;
+    }
+
+    .footer__logotypes {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .footer__social-svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer__social-item {
+        margin-right: 0;
+    }
+
+    .footer__social-list {
+        justify-content: space-between;
+    }
+
+    .footer__menu {
+        margin-top: 76px;
+        width: 100%;
+    }
+
+    .footer__menu-list {
+        justify-content: space-between;
+    }
+
+    .footer__menu-item {
+        margin-right: 0;
+        padding-bottom: 27px;
+    }
+
+    .footer__footer-svg {
+        display: none;
+    }
+
+    .footer__footer-svg-mobile {
+        display: inline-block;
+    }
+
+    .footer__footer-copyright {
+        padding-top: 7px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer__container {
+        padding-top: 54px;
+        padding-bottom: 0;
+    }
+
+    .footer__menu {
+        margin-top: 54px;
+    }
+
+    .footer__menu-item {
+        margin-right: 0;
+        width: 40%;
+    }
+
+    .footer__menu-item:not(:nth-child(3n+3)) {
+        margin-right: 0;
     }
 }

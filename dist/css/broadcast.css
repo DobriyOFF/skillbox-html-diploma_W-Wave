@@ -22,6 +22,10 @@
     font-size: 48px;
 }
 
+.broadcast__navigation-mic {
+    display: none;
+}
+
 .broadcast__form-author {
     margin-top: 6px;
     font-size: 16px;
@@ -243,4 +247,124 @@
     }
 }
 
+@media(max-width: 768px) {
+    .broadcast {
+        padding-bottom: 30px;
+    }
+
+    .broadcast__container {
+        flex-direction: column;
+    }
+    .broadcast__navigation-mic-mobile {
+        display: flex;
+        margin-top: 60px;
+        width: 63%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .broadcast__list {
+        margin-top: 47px;
+    }
+
+    .broadcast__form-img {
+        margin-top: 0;
+        width: 70px;
+        height: 96px;
+    }
+
+    .broadcast__mic-left {
+        margin-left: 20px;
+    }
+
+    .broadcast__form-btn {
+        margin-top: 0;
+    }
+
+    .broadcast__item {
+        width: 47%;
+    }
+}
+
+@media (max-width: 450px) {
+    .broadcast {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+
+    .broadcast__navigation {
+        margin: 0;
+    }
+
+    .broadcast__navigation-title {
+        font-size: 24px;
+    }
+
+    .broadcast__form-author {
+        font-size: 12px;
+    }
+
+    .broadcast__list {
+        margin-top: 30px;
+    }
+
+    .broadcast__item {
+        height: 149px;
+    }
+
+    .broadcast__cards-img {
+        height: 50px;
+    }
+
+    .broadcast__cards-title {
+        margin-top: 7px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .broadcast__cards-desc {
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .broadcast__btn-desc {
+        font-size: 12px;
+        color: #6D31EE;
+    }
+
+    .broadcast__navigation-mic-mobile {
+        margin: 0;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .broadcast__form-img {
+        width: 77px;
+        height: 105px;
+    }
+
+    .broadcast__mic-left {
+        display: flex;
+        margin-left: 13px;
+        flex-direction: column-reverse;
+    }
+
+    .broadcast__form-desc {
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    .broadcast__form-btn {
+        margin-top: 7px;
+        padding: 9px 25px;
+        width: 110px;
+        height: 35px;
+    }
+
+    .broadcast__line {
+        display: inline-block;
+        position: absolute;
+        top: 1685px;
+        left: 0;
+    }
+}
 

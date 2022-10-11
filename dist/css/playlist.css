@@ -387,14 +387,20 @@
         width: 255px;
     }
 
+    .playlist__shadow {
+        left: 0;
+    }
+
     .playlist__item-photo1, .playlist__item-photo2, .playlist__item-photo3, .playlist__item-photo4, .playlist__item-photo5, .playlist__item-photo6, .playlist__item-photo7, .playlist__item-photo8, .playlist__item-photo9, .playlist__item-photo10, .playlist__item-photo11, .playlist__item-photo12 {
         width: 112px;
         height: 112px;
     }
 
     .playlist__item-wrapper {
+        padding: 39px 0px 20px 8px;
         width: 143px;
         height: 112px;
+        border-top: 1px solid #E6E8EC;
     }
 
     .playlist__desc {
@@ -407,5 +413,95 @@
         padding-top: 38px;
         border-top: 1px solid #D2D5DD;
     }
+}
 
+@media (max-width: 768px) {
+    .playlist__genre {
+        width: 100%;
+    }
+
+    .radio__form {
+        width: 100%;
+    }
+
+    .playlist__radio-wrapper-left {
+        width: 30%;
+    }
+
+    .playlist__radio-wrapper-right {
+        width: 69%;
+    }
+
+    .playlist__form-desc-table {
+        margin-bottom: 8px;
+    }
+
+    .playlist__radio-wrapper {
+        margin-bottom: 27px;
+    }
+
+    .playlist__songs {
+        margin-top: 20px;
+    }
+
+    .playlist__item-wrapper {
+        width: 52%;
+    }
+
+    .playlist__item-photo1, .playlist__item-photo2, .playlist__item-photo3, .playlist__item-photo4, .playlist__item-photo5, .playlist__item-photo6, .playlist__item-photo7, .playlist__item-photo8, .playlist__item-photo9, .playlist__item-photo10, .playlist__item-photo11, .playlist__item-photo12 {
+        width: 42%;
+    }
+
+    .playlist__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .playlist__container {
+        margin-top: 54px;
+        margin-bottom: 54px;
+    }
+
+    .playlist__title {
+        font-size: 24px;
+    }
+
+    .playlist__form-desc-table {
+        font-size: 12px;
+    }
+
+    .radio__form {
+        display: none;
+    }
+
+    .playlist__item {
+        flex-direction: column;
+        width: 44%;
+        height: 159px;
+    }
+
+    .playlist__item-photo1, .playlist__item-photo2, .playlist__item-photo3, .playlist__item-photo4, .playlist__item-photo5, .playlist__item-photo6, .playlist__item-photo7, .playlist__item-photo8, .playlist__item-photo9, .playlist__item-photo10, .playlist__item-photo11, .playlist__item-photo12 {
+        width: 100%;
+        height: 113px;
+    }
+
+    .playlist__item-wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: 46px;
+    }
+
+    .playlist__item-title {
+        font-size: 12px;
+    }
+
+    .playlist__item-desc {
+        font-size: 9px;
+    }
+
+    .playlist__desc, .playlist__span {
+        font-size: 12px;
+    }
 }

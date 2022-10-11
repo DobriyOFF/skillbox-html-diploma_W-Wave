@@ -1,3 +1,7 @@
+.header__primary-mobile, .header__primary-log-in-mobile {
+    display: none;
+}
+
 .header__primary-container {
     display: flex;
     padding-top: 20px;
@@ -22,6 +26,14 @@
 }
 
 .header__primary-nav-table {
+    display: none;
+}
+
+.header__primary-burger {
+    display: none;
+}
+
+.header__ether-mobile {
     display: none;
 }
 
@@ -148,7 +160,6 @@
 
 .header__ether {
     display: flex;
-    width: 349px;
     justify-content: space-between;
 }
 
@@ -257,15 +268,198 @@
     }
 
     .header__secondary-menu {
-        width: 490px;
+        width: 59%;
     }
 
     .header__ether {
-        width: 301px;
+        width: 37%;
     }
 
     .header__qual {
         display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .header__primary-container {
+        padding-top: 23px;
+    }
+
+    .header__primary-list {
+        display: none;
+    }
+
+    .header__primary-burger {
+        position: relative;
+        padding: 0;
+        background-color: transparent;
+        display: block;
+        border: none;
+        outline: none;
+        z-index: 10
+    }
+
+    .header__primary-burger span,
+    .header__primary-burger:after,
+    .header__primary-burger:before {
+        height: 2px;
+        position: absolute;
+        background: #6D31EE;
+        margin: 0 auto
+    }
+
+    .header__primary-burger span {
+        width: 24px;
+        top: 21px
+    }
+
+    .header__primary-burger:after,
+    .header__primary-burger:before {
+        content: ''
+    }
+
+    .header__primary-burger:after {
+        width: 24px;
+        top: 33px
+    }
+
+    .header__primary-burger:before {
+        width: 24px;
+        top: 9px
+    }
+
+    .header__primary-burger.open-menu span {
+        opacity   : 0;
+        transition: 0.4s ease-in-out
+    }
+
+    .header__primary-burger.open-menu:before {
+        width     : 36px;
+        transform : rotate(45deg);
+        top       : 20px;
+        transition: 0.4s ease-in-out
+    }
+
+    .header__primary-burger.open-menu:after {
+        width     : 36px;
+        transform : rotate(-45deg);
+        top       : 20px;
+        transition: 0.4s ease-in-out
+    }
+
+    .header__primary-log-in {
+        height: 42px;
+    }
+
+    .header__ether {
+        display: none;
+    }
+
+    .header__qual {
+        display: none;
+    }
+
+    .header__ether-mobile {
+        display: inline-block;
+        height: 20px;
+    }
+
+    .header__secondary-nav {
+        padding-top: 19px;
+        padding-bottom: 18px;
+    }
+
+    .header__secondary-menu {
+        width: 92%;
+    }
+}
+
+@media(max-width:500px) {
+    .header__secondary-wrapper {
+        border: 0;
+        border-top: 1px solid #E6E8EC;
+        border-bottom: 1px solid #E6E8EC;
+    }
+    .header__secondary-nav {
+        display: none;
+    }
+
+    .header__secondary-wrapper {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .header__primary-mobile {
+        display: inline-block;
+
+    }
+
+    .header__primary-mobile-btn {
+        padding: 0;
+        font-weight: 500;
+        border: 0;
+        color: #6D31EE;
+    }
+
+    .header__primary-mobile-svg {
+        margin-right: 5px;
+    }
+
+    .header__primary-mobile-btn-desc {
+        transform: translateY(2px);
+    }
+}
+
+@media(max-width:450px) {
+    .header__primary-container {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .header__primary-container {
+        align-items: center;
+    }
+
+    .header__primary-container > svg {
+        width: 87px;
+        height: 10px;
+    }
+
+    .header__primary-log-in {
+        display: none;
+    }
+
+    .header__primary-log-in-mobile {
+        display: inline-block;
+        width: 87px;
+        height: 35px;
+    }
+
+    .header__primary-nav-table {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .header__primary-search {
+        padding: 0;
+    }
+
+    .header__primary-burger:before {
+        top: 0;
+    }
+
+    .header__primary-burger span {
+        top: 10px;
+    }
+
+    .header__primary-burger:after {
+        top: 20px;
+    }
+
+    .header__secondary-wrapper {
+        padding-top: 11px;
+        padding-bottom: 11px;
     }
 }
 
