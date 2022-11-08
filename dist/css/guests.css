@@ -151,6 +151,10 @@
     width: 25%
 }
 
+.gusts__bottom-link:hover {
+    color: #AA9DFA;
+}
+
 .gusts__bottom-link {
     color: var(--white);
 }
@@ -344,9 +348,6 @@
 
     .guests__bottom-item {
         font-size: 14px;
-    }
-
-    .guests__bottom-item {
         width: 43%;
     }
 

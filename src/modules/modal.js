@@ -1,34 +1,20 @@
-import {
-    animate,
-} from "./helper";
 const modal = () => {
-    const modal = document.querySelector('.popup');
-    const modalContent = modal.querySelector(".popup-content");
-    const buttons = document.querySelectorAll('.popup-btn');
-    let startPosition = -50; // начальное положение модального-окна
-    let stopPosition = 10;
+    const modalOverlay = document.querySelector('.modal__overlay')
+    const modalCallback = document.querySelector('.modal__callback')
 
-
-    buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            modal.style.display = 'block';
-            if (window.outerWidth > 768) {
-                animate({
-                    duration: 400,
-                    timing: (timeFraction) => timeFraction,
-                    draw(progress) {
-                        modalContent.style.top = startPosition + Math.round((stopPosition - startPosition) * progress)
-                    },
-                });
-            }
-        })
-    })
-
-    modal.addEventListener('click', (e) => {
-        if (!e.target.closest('.popup-content') || e.target.classList.contains('popup-close')) {
-            modal.style.display = 'none';
+    const toggleModal = (e) => {
+        if (e.target.closest('.header__primary-log-in') || e.target.closest('.broadcast__form-btn')
+            || e.target.closest('.hero__info-btn') || e.target.closest('.guests__card-btn')) {
+            e.preventDefault();
+            modalCallback.style.display = 'block'
+            modalOverlay.style.display = 'block'
         }
-    })
+        if (e.target.closest('.modal__close') || e.target.closest('.modal__overlay')) {
+            modalCallback.style.display = 'none'
+            modalOverlay.style.display = 'none'
+        }
+    }
+    document.addEventListener("click", (e) => toggleModal(e));
 }
 
-export default modal;
+export default modal
