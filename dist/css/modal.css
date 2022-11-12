@@ -31,6 +31,30 @@
     cursor: pointer;
 }
 
+.modal__close-svg:hover > path {
+    stroke: #6D31EE;
+}
+
+.modal__close-svg:focus > path {
+    stroke: #AA9DFA;
+}
+
+.modal__close-svg:active > path {
+    stroke: #4F28A5;
+}
+
+.modal__close-svg:hover > circle {
+    stroke: #6D31EE;
+}
+
+.modal__close-svg:focus > circle {
+    stroke: #AA9DFA;
+}
+
+.modal__close-svg:active > circle {
+    stroke: #4F28A5;
+}
+
 .modal__callback-title {
     font-weight: 400;
     font-size: 48px;
@@ -72,6 +96,20 @@
     font-weight: 400;
 }
 
+.form__callback-btn:hover {
+    background: #AA9DFA;
+}
+
+.form__callback-btn:focus {
+    background: #AA9DFA;
+    border: 2px solid #4F28A5;
+}
+
+.form__callback-btn:active {
+    background: #4F28A5;
+    border: 2px solid #4F28A5;
+}
+
 .form__callback-other {
     margin-top: 30px;
     border-top: 1px solid rgba(230, 232, 236, 0.4);
@@ -92,6 +130,30 @@
 
 .form__other-link {
     padding-right: 40px;
+}
+
+.form__other-svg:hover > rect {
+    fill: #6D31EE;
+}
+
+.form__other-svg:focus > rect {
+    fill: #AA9DFA;
+}
+
+.form__other-svg:active > rect {
+    fill: #4F28A5;
+}
+
+.form__other-svg:hover > g > path {
+    fill: #6D31EE;
+}
+
+.form__other-svg:focus > g > path {
+    fill: #AA9DFA;
+}
+
+.form__other-svg:active > g > path {
+    fill: #4F28A5;
 }
 
 @media (max-width: 1600px) {
