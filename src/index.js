@@ -1,5 +1,6 @@
 // import menu from './modules/menu'
 import modal from './modules/modal'
+import burger from './modules/burger'
 import serviceScroll from './modules/serviceScroll'
 // import validateForms from './modules/i'
 // import tabs from './modules/tabs'
@@ -9,6 +10,7 @@ import accordeon from './modules/accordeon'
 
 // menu()
 modal()
+burger()
 serviceScroll()
 // validateForms()
 // tabs()
@@ -47,6 +49,15 @@ const projectsSwiper = new Swiper('.about__carousel-container', {
         }
     },
 });
+
+//Кнопка "Что в эфире?" в мобильной версии
+const etherBtn = document.querySelector('.header__primary-mobile-btn');
+const etherDesc = document.querySelector('.ether__mobile-desc');
+
+etherBtn.addEventListener('click', () => {
+    etherDesc.classList.toggle('hidden')
+    etherDesc.classList.toggle('transparent')
+})
 
 //Кнопка "Еще подкасты"
 const eventsBtn = document.querySelector('.podcasts__btn');
